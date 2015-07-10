@@ -32,6 +32,7 @@ public class MoveCtrl : MonoBehaviour {
 
 		//マウスの左右移動値で回転
 		tr.Rotate (Vector3.up * Input.GetAxis ("Mouse X") * rotSpeed * Time.deltaTime);
+	
 
 		//ベクトルの加算演算を利用してあらかじめ移動方向を計算する
 		movDir = (tr.forward * v) + (tr.right * h);
